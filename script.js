@@ -15,34 +15,34 @@ console.log("JavaScript - Day -6 OOP in JS");
 
 // a) Write a constructor for the class Movie, which takes a String representing the title of the movie, a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
 
-// class Movie{
-//     constructor(title,studio,rating){
-//         this.title=title;
-//         this.studio=studio;
-//         this.rating=rating;
-//     }
-// }
+class Movie{
+    constructor(title,studio,rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+}
 
-// var show=new Movie("Cindrella","Fox Studios","PG 13,R");
-// console.log("Title"+": "+show.title);
-// console.log("Show:"+" "+show.studio);
-// console.log("Rating"+":"+show.rating);
+var show=new Movie("Cindrella","Fox Studios","PG 13,R");
+console.log("Title"+": "+show.title);
+console.log("Show:"+" "+show.studio);
+console.log("Rating"+":"+show.rating);
 
 //b) The constructor for the class Movie will set the class property rating to "PG"
 // as default when no rating is provided.
 
-// class Movie{
-//     constructor(title,studio,rating="PG"){
-//         this.title=title;
-//         this.studio=studio;
-//         this.rating=rating;
-//     }
-// }
+class Movie{
+    constructor(title,studio,rating="PG"){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+    }
+}
 
-// var show=new Movie("Cindrella","Fox Studios");
-// console.log("Title"+": "+show.title);
-// console.log("Show:"+" "+show.studio);
-// console.log("Rating"+":"+show.rating);
+var show=new Movie("Cindrella","Fox Studios");
+console.log("Title"+": "+show.title);
+console.log("Show:"+" "+show.studio);
+console.log("Rating"+":"+show.rating);
 
 //c) Write a method getPG, which takes an array of base type Movie as its argument, and
 //returns a new array of only those movies in the input array with a rating of "PG".
