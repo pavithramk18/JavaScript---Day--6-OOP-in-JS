@@ -1,0 +1,1 @@
+console.log("JavaScript - Day -6 OOP in JS")
