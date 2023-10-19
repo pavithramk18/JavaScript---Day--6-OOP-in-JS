@@ -48,34 +48,34 @@ console.log("JavaScript - Day -6 OOP in JS");
 //returns a new array of only those movies in the input array with a rating of "PG".
 //You may assume the input array is full of Movie instances. The returned array need not be full.
 
-class Movie {
-    constructor(title, rating,studio) {
-      this.title = title;
-      this.rating = rating;
-      this.studio=studio;
-    }
-  }
+// class Movie {
+//     constructor(title, rating,studio) {
+//       this.title = title;
+//       this.rating = rating;
+//       this.studio=studio;
+//     }
+//   }
   
-  function getPG(movieArray) {
-    const pgMovies = [];
-    for (let i = 0; i < movieArray.length; i++) {
-      if (movieArray[i].rating === 'PG') {
-        pgMovies.push(movieArray[i]);
-      }
-    }
-    return pgMovies;
-  }
+//   function getPG(movieArray) {
+//     const pgMovies = [];
+//     for (let i = 0; i < movieArray.length; i++) {
+//       if (movieArray[i].rating === 'PG') {
+//         pgMovies.push(movieArray[i]);
+//       }
+//     }
+//     return pgMovies;
+//   }
   
-  // Example usage:
-  const movies = [
-    new Movie('Movie 1', 'PG',"Fox Studio"),
-    new Movie('Movie 2', 'R',"2D Entertainment"),
-    new Movie('Movie 3', 'PG',"Red Giant"),
-    new Movie('Movie 4', 'G',"Siva Productions")
-  ];
+//   // Example usage:
+//   const movies = [
+//     new Movie('Movie 1', 'PG',"Fox Studio"),
+//     new Movie('Movie 2', 'R',"2D Entertainment"),
+//     new Movie('Movie 3', 'PG',"Red Giant"),
+//     new Movie('Movie 4', 'G',"Siva Productions")
+//   ];
   
-  const pgMovies = getPG(movies);
-  console.log(pgMovies);
+//   const pgMovies = getPG(movies);
+//   console.log(pgMovies);
 
 //d) Write a piece of code that creates an instance of the class Movie
 // with the title “Casino Royale”, the studio “Eon Productions”, and the rating “PG­13”
